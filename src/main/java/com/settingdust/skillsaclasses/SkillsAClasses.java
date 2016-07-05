@@ -1,6 +1,6 @@
 package com.settingdust.skillsaclasses;
 
-import com.settingdust.skillsaclasses.classes.BaseClass;
+import com.settingdust.skillsaclasses.classes.*;
 import com.settingdust.skillsaclasses.skills.BaseSkill;
 import com.sucy.skill.SkillAPI;
 import com.sucy.skill.api.SkillPlugin;
@@ -25,7 +25,10 @@ public class SkillsAClasses extends JavaPlugin implements SkillPlugin {
 
     public void registerClasses(SkillAPI skillAPI) {
         skillAPI.addClasses(
-                new BaseClass()
+                new 明教(),
+                new 少林(),
+                new 武当(),
+                new 唐门()
         );
     }
 }
