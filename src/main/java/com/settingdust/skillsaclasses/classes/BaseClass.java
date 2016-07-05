@@ -9,8 +9,8 @@ import org.bukkit.inventory.ItemStack;
  * Date: 16-7-5
  * By IntelliJ IDEA
  */
-public class BaseClass extends RPGClass{
-    protected BaseClass() {
+public class BaseClass extends RPGClass {
+    public BaseClass() {
         super("name",
                 new ItemStack(Material.BOOK),
                 10,

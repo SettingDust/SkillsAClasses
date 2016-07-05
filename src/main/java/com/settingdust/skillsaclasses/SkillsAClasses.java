@@ -1,5 +1,7 @@
 package com.settingdust.skillsaclasses;
 
+import com.settingdust.skillsaclasses.classes.BaseClass;
+import com.settingdust.skillsaclasses.skills.BaseSkill;
 import com.sucy.skill.SkillAPI;
 import com.sucy.skill.api.SkillPlugin;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -16,10 +18,14 @@ public class SkillsAClasses extends JavaPlugin implements SkillPlugin {
     }
 
     public void registerSkills(SkillAPI skillAPI) {
-
+        skillAPI.addSkills(
+                new BaseSkill()
+        );
     }
 
     public void registerClasses(SkillAPI skillAPI) {
-
+        skillAPI.addClasses(
+                new BaseClass()
+        );
     }
 }
